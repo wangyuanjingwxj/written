@@ -11,8 +11,8 @@ from selenium.webdriver.support import expected_conditions as EC
 def get_forex_rate(date, currency):
     # 设置 Chrome 选项
     chrome_options = Options()
-    chrome_options.add_argument("--headless")  # 无头模式，不打开浏览器窗口
-    service = Service(r"C:\Program Files\Google\Chrome\Application\chromedriver.exe")  # 请替换为您的 ChromeDriver 路径
+    chrome_options.add_argument("--headless")  # 不打开浏览器窗口
+    service = Service(r"C:\Program Files\Google\Chrome\Application\chromedriver.exe")  
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
     try:
